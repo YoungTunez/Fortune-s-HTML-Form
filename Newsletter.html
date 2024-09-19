@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Signup</title>
+  </head>
+  <body>
+    <h1>Newsletter Signup</h1>
+    <form
+      action="Share to ID on github"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="category">Select a category of interest:</label><br />
+      <select id="category" name="category" required>
+        <option value="">Choose an option</option>
+        <option value="Food">Food</option>
+        <option value="Technology">Technology</option>
+        <option value="Health">Health</option>
+        <option value="Travel">Travel</option>
+        <option value="Finance">Finance</option>
+      </select>
+      <br />
+
+      <p>
+        Upload a profile picture:<br />
+        <input type="file" name="profile image" accept=".jpg" required />
+      </p>
+      <button>Sign Up</button>
+    </form>
+  </body>
+</html>
